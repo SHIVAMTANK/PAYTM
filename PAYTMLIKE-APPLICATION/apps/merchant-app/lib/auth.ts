@@ -1,6 +1,6 @@
 import GoogleProvider from "next-auth/providers/google";
-import db from "@repo/db/client";
-import { AuthOptions } from "next-auth";
+import db from "@repo/db/client"
+
 
 export const authOptions = {
     providers: [
@@ -45,5 +45,5 @@ export const authOptions = {
         return true;
       }
     },
-    secret: process.env.NEXTAUTH_SECRET || ""
+    secret: process.env.NEXTAUTH_SECRET || "secret"
   }
